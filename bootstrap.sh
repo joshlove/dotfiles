@@ -15,3 +15,6 @@ sudo chmod -R 777 /Library/Ruby/Gems/
 gem install bundler
 bundle install #requires a Gemfile
 
+#cask is part of brew that install GUI applications
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+brew bundle Caskfile
