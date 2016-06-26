@@ -1,0 +1,75 @@
+#put aliases here
+#show/hide dotfiles
+alias flushdns="sudo discoveryutil mdnsflushcache && sudo discoveryutil udnsflushcaches"
+
+alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+alias ll="ls $ls_options"
+alias ls="ls -FG"
+alias l=ll
+alias f='find . -name'
+alias tmux="TERM=screen-256color-bce tmux"
+alias tc="tmux show-buffer | pbcopy"
+alias tp="tmux set-buffer pbpaste; tmux paste-buffer"
+
+# Git
+alias gg='git status'
+alias gs='git status'
+alias gb='git branch -va'
+alias gcm='git commit -m'
+alias gf='git fetch'
+alias gp='git pull'
+alias changes='git diff --numstat --shortstat start'
+alias standup='git log --since yesterday --author `git config user.email` --pretty=short'
+
+# bhaskell git
+alias g=git
+alias gap='git add -p'
+alias gci='git commit'
+alias gco='git checkout'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gka='gitk --all'
+alias gtls='git ls-files'
+alias gpop='git stash pop'
+alias gst='git status'
+alias gstash='git stash'
+
+#vagrant
+alias vup='vagrant up'
+alias vhalt='vagrant halt'
+alias vdest='vagrant destroy'
+alias vrel='vagrant reload'
+alias vsusp='vagrant suspend'
+alias vres='vagrant resume'
+
+alias vst='vagrant status'
+alias vgst='vagrant global-status'
+
+alias vssh='vagrant ssh'
+alias vsnap='vagrant snapshot'
+
+
+# Bundler
+alias be='bundle exec'
+alias rake='be rake'
+
+# Rspec
+alias respect='bundle exec rspec'
+alias ber='bundle exec rspec'
+alias wipit='be rspec -t @wip'
+# Run the specs and push if successful
+alias rpush='rspec --fail-fast && git push'
+
+# Rails
+alias r='bundle exec rails s'
+alias rspec='rspec -c'
+alias migrate='bundle exec rake db:migrate && bundle exec rake test:prepare'
+# Pow
+alias rpow='touch tmp/restart.txt'
+alias vlm='vim db/migrate/`ls db/migrate | tail -1`'
+
+# Apps
+alias v='vim'
+alias vi='vim'
