@@ -5,6 +5,7 @@
 
 #prepare to run brewfile
 brew tap homebrew/bundle
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew bundle #requires a brewfile!
 
 #brewfile should contain ruby-install, installs most recent ruby versions
@@ -15,6 +16,3 @@ sudo chmod -R 777 /Library/Ruby/Gems/
 gem install bundler
 bundle install #requires a Gemfile
 
-#cask is part of brew that install GUI applications
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-brew bundle Caskfile
