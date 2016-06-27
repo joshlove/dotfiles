@@ -1,4 +1,6 @@
 # Settings for all shells
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
 #Environment variables
 export EDITOR=vim
@@ -29,10 +31,6 @@ termcap_bind() {
     [ -n "$key" ] && bind "\"$key\": $widget"
   done
 }
-
-# Search history
-termcap_bind history-search-backward cuu1 kcuu1
-termcap_bind history-search-forward cud1 kcud1
 
 # Simulate Zsh's preexec hook (see: http://superuser.com/a/175802/73015 )
 # (This performs the histappend at a better time)
@@ -80,11 +78,6 @@ prompt() {
 PROMPT_COMMAND=prompt
 # retain $PROMPT_DIRTRIM directory components when the prompt is too long
 PROMPT_DIRTRIM=3
-
-# Load completion files from $dotfiles/completion/{function}.bash
-for script in "$dotfiles/completion/"*.bash ; do
-  . "$script" > /dev/null 2>&1
-done
 
 test -e ${HOME}/.iterm2_shell_integration.bash && source ${HOME}/.iterm2_shell_integration.bash
 

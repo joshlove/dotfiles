@@ -21,18 +21,12 @@ alias gcm='git commit -m'
 alias gf='git fetch'
 alias gp='git pull'
 alias changes='git diff --numstat --shortstat start'
-alias standup='git log --since yesterday --author `git config user.email` --pretty=short'
-
-# bhaskell git
+alias standup='git log --since yesterday --author `git config user.email` --pretty=short'ß
 alias g=git
 alias gap='git add -p'
 alias gci='git commit'
 alias gco='git checkout'
 alias gd='git diff'
-alias gdc='git diff --cached'
-alias gka='gitk --all'
-alias gtls='git ls-files'
-alias gpop='git stash pop'
 alias gst='git status'
 alias gstash='git stash'
 
