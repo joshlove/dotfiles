@@ -16,3 +16,4 @@ sudo chmod -R 777 /Library/Ruby/Gems/
 gem install bundler
 bundle install #requires a Gemfile
 
+dotfile_linker --path .
