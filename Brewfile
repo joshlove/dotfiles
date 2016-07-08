@@ -13,6 +13,7 @@ brew "htop"
 brew "bash-completion"
 brew "ack"
 brew "ansible"
+brew "terraform"
 
 #taps
 tap "caskroom/cask"
