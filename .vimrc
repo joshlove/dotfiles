@@ -21,6 +21,7 @@ Plugin 'vim-scripts/Rainbow-Parenthesis'
 Plugin 'vim-scripts/bad-whitespace'
 Plugin 'tpope/vim-markdown'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'tpope/vim-endwise'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
