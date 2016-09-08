@@ -93,7 +93,7 @@ if $TERM == "xterm-256color"
   set t_Co=256
 endif
 set background=dark
-colorscheme solarized
+
 
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1

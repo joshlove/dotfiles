@@ -17,3 +17,15 @@ gem install bundler
 bundle install #requires a Gemfile
 
 dotfile_linker --path .
+
+#install zsh / oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#Color Iterm setup
+#Launch iTerm 2. Get the latest version at iterm2.com
+#Type CMD+i (⌘+i)
+#Navigate to Colors tab
+#Click on Load Presets
+#Click on Import and use cobalt2
+#Install Meslo font, set iterm to use it.
+#chsh to zsh

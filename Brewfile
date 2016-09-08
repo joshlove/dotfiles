@@ -14,6 +14,7 @@ brew "bash-completion"
 brew "ack"
 brew "ansible"
 brew "terraform"
+brew "curl"
 
 #taps
 tap "caskroom/cask"
@@ -30,3 +31,5 @@ cask 'sublime-text'
 cask 'vagrant'
 cask 'vagrant-manager'
 cask 'virtualbox'
+cask 'vlc'
+
