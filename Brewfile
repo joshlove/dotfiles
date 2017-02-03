@@ -32,4 +32,5 @@ cask 'vagrant'
 cask 'vagrant-manager'
 cask 'virtualbox'
 cask 'vlc'
-
+cask 'atom'
+cask '1password'
