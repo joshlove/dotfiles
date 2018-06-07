@@ -15,6 +15,7 @@ brew "ack"
 brew "ansible"
 brew "terraform"
 brew "curl"
+brew "jq"
 
 #taps
 tap "caskroom/cask"
