@@ -16,6 +16,7 @@ brew "ansible"
 brew "terraform"
 brew "curl"
 brew "jq"
+brew "zsh-autosuggestions"
 
 #taps
 tap "caskroom/cask"
